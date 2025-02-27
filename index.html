@@ -7,21 +7,36 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5dc; /* Krémově béžová barva */
             margin: 0;
             padding: 0;
+            background-color: #f5f5dc; /* Béžová barva pozadí */
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.7); /* Tmavá polotransparentní barva pro text na pozadí */
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 50px 20px;
+            position: relative;
+            z-index: 1;
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 4em;
             font-family: 'Cursive', sans-serif;
+            margin: 0;
+        }
+
+        /* Nastavení obrázku jako pozadí */
+        .background-image {
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fkfmx.com%2Fmeow-lubbock-just-might-be-getting-a-cat-cafe-in-the-near-future%2F&psig=AOvVaw0rU3bFB22LqHDgM2H8K8co&ust=1740754691909000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCKjV7emO5IsDFQAAAAAdAAAAABAJ');
+            background-size: cover;  /* Obrázek pokrývá celou oblast */
+            background-position: center;  /* Obrázek je zarovnán na střed */
+            background-attachment: fixed;  /* Obrázek zůstává na místě při scrollování */
+            height: 50vh; /* Výška pozadí je polovina obrazovky */
+            width: 100%;
+            position: relative;
         }
 
         nav {
@@ -48,18 +63,6 @@
             border-radius: 8px;
         }
 
-        h2 {
-            color: #333;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-
         footer {
             text-align: center;
             padding: 10px;
@@ -77,6 +80,9 @@
         <h1>Cat Cafe</h1>
     </header>
 
+    <!-- Tato sekce bude zobrazovat pozadí obrázku přes polovinu stránky -->
+    <div class="background-image"></div>
+
     <nav>
         <a href="#domovska">Domovská stránka</a>
         <a href="#onas">O nás</a>
@@ -86,8 +92,14 @@
 
     <section id="domovska">
         <h2>Vítejte v Cat Cafe!</h2>
-        <p>V naší kočičí kavárně si můžete užít příjemné chvíle s našimi roztomilými kočičkami a zároveň si vychutnat skvělou kávu a domácí zákusky.</p>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fkfmx.com%2Fmeow-lubbock-just-might-be-getting-a-cat-cafe-in-the-near-future%2F&psig=AOvVaw0rU3bFB22LqHDgM2H8K8co&ust=1740754691909000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCKjV7emO5IsDFQAAAAAdAAAAABAJ" alt="Kočičí kavárna">
+        <p>O Cat Cafe
+          Vítejte v Cat Cafe, místě, kde se spojují milovníci koček, kvalitní kávy a přátelská atmosféra! Naše kočičí kavárna je ideálním útočištěm pro každého, kdo hledá příjemné místo k relaxaci a zároveň chce strávit čas s našimi roztomilými kočičkami.
+          
+          V Cat Cafe nabízíme nejen skvělou kávu a domácí zákusky, ale také příležitost seznámit se s kočičkami, které jsou přítomné v kavárně. Naše kočky jsou přátelské, zvyklé na kontakt s lidmi a rády se podělí o svou společnost s každým návštěvníkem.
+          
+          A co je nejlepší? Všechny naše kočičky jsou k dispozici k adopci! Pokud se vám některá z nich zalíbí a rozhodnete se ji vzít domů, rádi vám pomůžeme s celým procesem adopce. Naší misí je nejen poskytovat pohodlné a přívětivé místo pro lidi, ale také pomáhat těmto kočkám najít láskyplné domovy.
+          
+          Navštivte nás a zjistěte, jaké kočičky u nás právě žijí, ochutnejte naše speciality a užijte si chvíle klidu a pohody v Cat Cafe. Těšíme se na vaši návštěvu!</p>
     </section>
 
     <section id="onas">
