@@ -3,13 +3,13 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f5f5dc;
+    background-color: #e0d2d2;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: #654321;
+    background-color: #d0bfae;
     padding: 10px;
     list-style: none;
 }
@@ -50,9 +50,9 @@ img {
 .cat {
     width: 200px;
     padding: 10px;
-    background: white;
+    background: rgb(146, 134, 127);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .cat img {
