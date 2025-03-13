@@ -4,122 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Cafe</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5dc; /* Béžová barva pozadí */
-            color: #333;
-        }
-
-        header {
-            background-color: rgba(51, 51, 51, 0.7); /* Tmavá polotransparentní barva pro text na pozadí */
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
-            position: relative;
-            z-index: 1;
-        }
-
-        header h1 {
-            font-size: 4em;
-            font-family: 'Cursive', sans-serif;
-            margin: 0;
-        }
-
-        /* Nastavení obrázku jako pozadí */
-        .background-image {
-            background-image: url('https://www.baven.cz/user/articles/images/kocka.png');
-            background-size: cover;  /* Obrázek pokrývá celou oblast */
-            background-position: center;  /* Obrázek je zarovnán na střed */
-            background-attachment: fixed;  /* Obrázek zůstává na místě při scrollování */
-            height: 50vh; /* Výška pozadí je polovina obrazovky */
-            width: 100%;
-            position: relative;
-        }
-
-        nav {
-            background-color: #444;
-            overflow: hidden;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 14px 20px;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <header>
-        <h1>Cat Cafe</h1>
-    </header>
-
-    <!-- Tato sekce bude zobrazovat pozadí obrázku přes polovinu stránky -->
-    <div class="background-image"></div>
-
     <nav>
-        <a href="#domovska">Domovská stránka</a>
-        <a href="#onas">O nás</a>
-        <a href="#kocicky">Kočičky</a>
-        <a href="#jidelnilistek">Jídelní lístek</a>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Domovská stránka</a></li>
+            <li><a href="#" onclick="showSection('cats')">Naše kočičky</a></li>
+            <li><a href="#" onclick="showSection('menu')">Jídelní a nápojový lístek</a></li>
+        </ul>
     </nav>
 
-    <section id="domovska">
-        <h2>Vítejte v Cat Cafe!</h2>
-        <p>O Cat Cafe
-          Vítejte v Cat Cafe, místě, kde se spojují milovníci koček, kvalitní kávy a přátelská atmosféra! Naše kočičí kavárna je ideálním útočištěm pro každého, kdo hledá příjemné místo k relaxaci a zároveň chce strávit čas s našimi roztomilými kočičkami.
-          
-          V Cat Cafe nabízíme nejen skvělou kávu a domácí zákusky, ale také příležitost seznámit se s kočičkami, které jsou přítomné v kavárně. Naše kočky jsou přátelské, zvyklé na kontakt s lidmi a rády se podělí o svou společnost s každým návštěvníkem.
-          
-          A co je nejlepší? Všechny naše kočičky jsou k dispozici k adopci! Pokud se vám některá z nich zalíbí a rozhodnete se ji vzít domů, rádi vám pomůžeme s celým procesem adopce. Naší misí je nejen poskytovat pohodlné a přívětivé místo pro lidi, ale také pomáhat těmto kočkám najít láskyplné domovy.
-          
-          Navštivte nás a zjistěte, jaké kočičky u nás právě žijí, ochutnejte naše speciality a užijte si chvíle klidu a pohody v Cat Cafe. Těšíme se na vaši návštěvu!</p>
+    <section id="home" class="active">
+        <img src="cat-cafe.jpg" alt="Cat Cafe">
+        <h1>Vítejte v Cat Cafe</h1>
+        <p>Naše kočičí kavárna je místem, kde si můžete vychutnat lahodnou kávu v přítomnosti přátelských koček, které čekají na nový domov.</p>
     </section>
 
-    <section id="onas">
-        <h2>O nás</h2>
-        <p>Kočičí kavárna je ideálním místem pro všechny milovníky koček a kávové nadšence. Naše kavárna nabízí nejen skvělou atmosféru, ale i možnost trávit čas s našimi kočičkami, které si zamilujete!</p>
+    <section id="cats">
+        <h1>Naše kočičky</h1>
+        <div class="cats-container">
+            <!-- 15 koček s obrázky -->
+            <div class="cat">
+                <h2>Oliver</h2>
+                <img src="cat1.jpg" alt="Oliver">
+                <p>Hravý a mazlivý kocourek, který miluje škrabadla.</p>
+            </div>
+            <div class="cat">
+                <h2>Luna</h2>
+                <img src="cat2.jpg" alt="Luna">
+                <p>Elegantní kočička, která se ráda mazlí.</p>
+            </div>
+            <!-- Přidej dalších 13 koček -->
+        </div>
     </section>
 
-    <section id="kocicky">
-        <h2>Kočičky</h2>
-        <p>V naší kavárně máme několik kočiček, které jsou přátelské a zvyklé na kontakt s lidmi. Každá kočička má svůj vlastní příběh a ráda se podělí o svou společnost s každým návštěvníkem.</p>
+    <section id="menu">
+        <h1>Nápojový a jídelní lístek</h1>
+        <h2>Nápoje</h2>
+        <ul>
+            <li>Káva - 50 Kč</li>
+            <li>Čaj - 40 Kč</li>
+            <li>Nealkoholické nápoje - 45 Kč</li>
+            <li>Pivo - 55 Kč</li>
+            <li>Víno - 70 Kč</li>
+        </ul>
+        <h2>Jídlo</h2>
+        <ul>
+            <li>Čokoládový dort - 80 Kč</li>
+            <li>Jablečný koláč - 75 Kč</li>
+            <li>Bageta se sýrem - 90 Kč</li>
+            <li>Bageta s kuřecím masem - 100 Kč</li>
+        </ul>
     </section>
-
-    <section id="jidelnilistek">
-        <h2>Jídelní lístek</h2>
-        <p>V naší nabídce najdete nejen vynikající kávu, ale i různé čaje a osvěžující nápoje. K tomu nabízíme domácí zákusky a občerstvení, které si můžete vychutnat v příjemném prostředí s kočičkami.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Cat Cafe. Všechna práva vyhrazena.</p>
-    </footer>
 
 </body>
 </html>
+
