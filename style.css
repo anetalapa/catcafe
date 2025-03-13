@@ -70,20 +70,18 @@ ul li {
     margin: 5px 0;
 }
 
-/* Nové styly pro sekci Naši zaměstnanci */
+
 .staff-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .staff-member {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     max-width: 600px;
     background: white;
     padding: 10px;
@@ -99,25 +97,19 @@ ul li {
     border-radius: 50%;
 }
 
-.staff-member h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
 
-.long-text {
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: left;
-}
-
-/* Hlavní manažerka bude ve středu */
-#manager {
-    display: flex;
+.manager {
+    order: -1;  
     justify-content: center;
-    margin-top: 30px;
+    align-items: center;
 }
 
-/* Styly pro jídelní lístek */
+.manager img {
+    width: 120px;
+    height: 120px;
+}
+
+
 #menu {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
