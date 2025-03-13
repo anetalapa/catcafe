@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #e0d2d2;
+    background-color: #ded6c7;
 }
 
 nav ul {
@@ -50,9 +50,9 @@ img {
 .cat {
     width: 200px;
     padding: 10px;
-    background: rgb(146, 134, 127);
+    background: rgb(245, 234, 228);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(177, 167, 167, 0.1);
 }
 
 .cat img {
@@ -101,4 +101,54 @@ ul li {
     max-width: 800px;
     margin: 20px auto;
     text-align: left;
+}
+
+/* Styly pro jídelní lístek */
+#menu {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.menu-category {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.menu-items {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-name {
+    font-size: 1.2em;
+}
+
+.item-price {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.menu-items li:last-child {
+    border-bottom: none;
 }
