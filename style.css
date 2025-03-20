@@ -9,7 +9,7 @@ body {
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: #c8c4c0;
+    background-color: #520a00;
     padding: 10px;
     list-style: none;
 }
@@ -157,4 +157,19 @@ h2 {
 
 .menu-items li:last-child {
     border-bottom: none;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
 }
