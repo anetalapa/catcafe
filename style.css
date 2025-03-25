@@ -3,18 +3,16 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 100vh;
     background-color: #e9e5de;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
     background-color: #4a4d4f;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     list-style: none;
 }
 
