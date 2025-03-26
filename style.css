@@ -19,7 +19,6 @@ nav ul {
     width: 100%;
     list-style: none;
     display: flex; /* Zajistí položky vedle sebe */
-    justify-content: center; /* Zarovná položky na střed */
     margin: 0;
 }
 
