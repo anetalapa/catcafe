@@ -8,6 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #e9e5de;
+    flex-direction: column; /* Abychom měli obsah pod navigací */
 }
 
 nav ul {
@@ -16,8 +17,10 @@ nav ul {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
     list-style: none;
+    display: flex; /* Zajistí položky vedle sebe */
+    justify-content: center; /* Zarovná položky na střed */
+    margin: 0;
 }
 
 nav ul li {
@@ -33,6 +36,7 @@ nav ul li a {
 section {
     display: none;
     padding: 20px;
+    margin-top: 60px; /* Umožní obsah pod navigací */
 }
 
 section.active {
