@@ -119,6 +119,11 @@ ul li {
     height: 120px;
 }
 
+#home {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 #menu {
     font-family: 'Arial', sans-serif;
@@ -182,9 +187,4 @@ h2 {
 
 .footer p {
     margin: 0;
-}
-#home {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
 }
